@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categoria | Gastronomia en Casa</title>
+  <link rel="stylesheet" href="../styles/main.scss">
+  <script type="module" src="../js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar navegacion principal</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <p class="logo">Gastronomia en Casa</p>
+      <nav class="main-nav" aria-label="Navegacion principal">
+        <ul>
+          <li><a href="../index.html">Portada</a></li>
+          <li><a href="./index.html" aria-current="page">Categoria</a></li>
+          <li><a href="../det1/index.html">Detalle 1</a></li>
+          <li><a href="../det2/index.html">Detalle 2</a></li>
+          <li><a href="../links/index.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="page">
+    <section class="hero" data-aos="fade-up">
+      <h1>Categoria: recetas y rincones gastronomicos</h1>
+      <p>Explora propuestas de cocina mediterranea, dulces caseros y cocina de mercado. Usa los filtros para ver los elementos que mas te interesan.</p>
+    </section>
+
+    <section aria-labelledby="filtros" data-aos="fade-up">
+      <h2 id="filtros">Filtrar contenido</h2>
+      <div class="filters" role="group" aria-label="Filtro por tipo de contenido">
+        <button type="button" class="is-active" data-filter="todos">Todos</button>
+        <button type="button" data-filter="receta">Recetas</button>
+        <button type="button" data-filter="lugar">Lugares</button>
+      </div>
+    </section>
+
+    <section aria-label="Listado de elementos" class="grid">
+      <article class="card" data-category-card data-type="receta" data-aos="fade-up">
+        <img src="../imagenes/dg.jpg" alt="Plato de arroz meloso con verduras">
+        <div class="card-content">
+          <h3>Arroz meloso de temporada</h3>
+          <p>Receta de cuchara para dias frios, con caldo casero y verduras de proximidad.</p>
+          <a class="cta" href="../det1/index.html">Ver detalle de la receta</a>
+        </div>
+      </article>
+
+      <article class="card" data-category-card data-type="receta" data-aos="fade-up" data-aos-delay="80">
+        <img src="../imagenes/ntpq.jpg" alt="Tarta rustica con fruta horneada">
+        <div class="card-content">
+          <h3>Tarta rustica de frutas</h3>
+          <p>Base crujiente, fruta de temporada y acabado suave con miel local.</p>
+          <a class="cta" href="../det2/index.html">Ver detalle del postre</a>
+        </div>
+      </article>
+
+      <article class="card" data-category-card data-type="lugar" data-aos="fade-up" data-aos-delay="140">
+        <img src="../imagenes/Netflix.jpg" alt="Mercado gastronomico con puestos variados">
+        <div class="card-content">
+          <h3>Mercado gastronomico central</h3>
+          <p>Parada recomendada para comprar producto fresco y descubrir productores locales.</p>
+          <a class="cta" href="../links/index.html">Fuentes y referencias</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Proyecto academico de gastronomia con HTML, Sass, JavaScript y Parcel.</p>
+  </footer>
+</body>
+</html>
