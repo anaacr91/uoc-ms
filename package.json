@@ -1,0 +1,26 @@
+{
+  "name": "web-gastronomia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portal de gastronomia con Parcel",
+  "scripts": {
+    "dev": "parcel serve index.html categoria/index.html det1/index.html det2/index.html links/index.html",
+    "build": "parcel build index.html categoria/index.html det1/index.html det2/index.html links/index.html --dist-dir dist --public-url ./"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "IE 11"
+  ],
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.14.4",
+    "postcss-preset-env": "^10.2.3",
+    "sass": "^1.89.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
