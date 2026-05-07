@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portada | Gastronomia en Casa</title>
+  <meta name="description" content="Portal de recetas y cultura gastronomica con imagenes responsive, accesibilidad y animaciones CSS.">
+  <link rel="icon" href="./imagenes/comida-postre.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles/main.scss">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <p class="logo">Gastronomia en Casa</p>
+      <nav class="main-nav" aria-label="Navegacion principal">
+        <ul>
+          <li><a href="./index.html" aria-current="page">Portada</a></li>
+          <li><a href="./categoria/index.html">Categoria</a></li>
+          <li><a href="./det1/index.html">Detalle 1</a></li>
+          <li><a href="./det2/index.html">Detalle 2</a></li>
+          <li><a href="./links/index.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="page">
+    <section class="hero hero-home" data-aos="fade-up">
+      <div>
+        <h1>Cocina mediterranea, practica y visual</h1>
+        <p>Explora recetas y tecnicas culinarias en una web adaptada para movil, tableta y escritorio, con foco en rendimiento y accesibilidad.</p>
+      </div>
+      <div class="animated-svg" role="img" aria-label="Icono animado de cocina con vapor">
+        <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg">
+          <rect x="54" y="104" width="212" height="78" rx="18" fill="#b84b2b"/>
+          <rect x="88" y="89" width="146" height="24" rx="10" fill="#f6d7ac"/>
+          <circle cx="102" cy="142" r="9" fill="#f9e8cc"/>
+          <circle cx="135" cy="142" r="9" fill="#f9e8cc"/>
+          <circle cx="168" cy="142" r="9" fill="#f9e8cc"/>
+          <path class="steam steam-1" d="M116 70c0-14 14-14 14-28" stroke="#8d3218" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path class="steam steam-2" d="M160 74c0-14 14-14 14-30" stroke="#8d3218" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path class="steam steam-3" d="M204 70c0-14 14-14 14-28" stroke="#8d3218" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Entradas principales" data-aos="fade-up">
+      <article class="card">
+        <picture>
+          <source type="image/avif" srcset="./imagenes/optimized/comida-principal-480.avif 480w, ./imagenes/optimized/comida-principal-960.avif 960w, ./imagenes/optimized/comida-principal-1440.avif 1440w" sizes="(max-width: 700px) 100vw, 33vw">
+          <source type="image/webp" srcset="./imagenes/optimized/comida-principal-480.webp 480w, ./imagenes/optimized/comida-principal-960.webp 960w, ./imagenes/optimized/comida-principal-1440.webp 1440w" sizes="(max-width: 700px) 100vw, 33vw">
+          <img src="./imagenes/optimized/comida-principal-960.jpg" srcset="./imagenes/optimized/comida-principal-480.jpg 480w, ./imagenes/optimized/comida-principal-960.jpg 960w, ./imagenes/optimized/comida-principal-1440.jpg 1440w" sizes="(max-width: 700px) 100vw, 33vw" alt="Plato principal servido con vegetales frescos" loading="lazy" decoding="async" width="960" height="640">
+        </picture>
+        <div class="card-content">
+          <h2>Recetas de temporada</h2>
+          <p>Preparaciones sencillas con producto local y equilibrio nutricional.</p>
+          <a class="cta" href="./categoria/index.html">Explorar categoria</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <picture class="clip-frame">
+          <source type="image/webp" srcset="./imagenes/optimized/comida-postre-480.webp 480w, ./imagenes/optimized/comida-postre-960.webp 960w, ./imagenes/optimized/comida-postre-1440.webp 1440w" sizes="(max-width: 700px) 100vw, 33vw">
+          <img src="./imagenes/optimized/comida-postre-960.jpg" srcset="./imagenes/optimized/comida-postre-480.jpg 480w, ./imagenes/optimized/comida-postre-960.jpg 960w, ./imagenes/optimized/comida-postre-1440.jpg 1440w" sizes="(max-width: 700px) 100vw, 33vw" alt="Postre artesanal de frutas con acabado dorado" loading="lazy" decoding="async" width="960" height="640">
+        </picture>
+        <div class="card-content">
+          <h2>Postres caseros</h2>
+          <p>Texturas crujientes y sabores suaves para cerrar cualquier menu.</p>
+          <a class="cta" href="./det2/index.html">Ver detalle del postre</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <picture>
+          <source type="image/webp" srcset="./imagenes/optimized/comida-entrada-480.webp 480w, ./imagenes/optimized/comida-entrada-960.webp 960w, ./imagenes/optimized/comida-entrada-1440.webp 1440w" sizes="(max-width: 700px) 100vw, 33vw">
+          <img src="./imagenes/optimized/comida-entrada-960.jpg" srcset="./imagenes/optimized/comida-entrada-480.jpg 480w, ./imagenes/optimized/comida-entrada-960.jpg 960w, ./imagenes/optimized/comida-entrada-1440.jpg 1440w" sizes="(max-width: 700px) 100vw, 33vw" alt="Entrada fresca de verduras y hierbas aromaticas" loading="lazy" decoding="async" width="960" height="640">
+        </picture>
+        <div class="card-content">
+          <h2>Consejos de preparacion</h2>
+          <p>Tiempos, cortes y tecnicas para obtener resultados consistentes.</p>
+          <a class="cta" href="./det1/index.html">Ir a detalle 1</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Proyecto academico de gastronomia accesible y responsive.</p>
+  </footer>
+</body>
+</html>

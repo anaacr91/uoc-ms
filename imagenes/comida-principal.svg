@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d">
+  <title id="t">Plato principal de pasta</title>
+  <desc id="d">Ilustracion de pasta con salsa de tomate y albahaca.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f6fbff"/>
+      <stop offset="1" stop-color="#d7ecff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <ellipse cx="600" cy="520" rx="340" ry="145" fill="#d5dbe0"/>
+  <ellipse cx="600" cy="500" rx="325" ry="132" fill="#ffffff"/>
+  <ellipse cx="600" cy="470" rx="250" ry="90" fill="#ffd180"/>
+  <path d="M420 455c55-55 145-58 200-8 60 55 152 50 204-7" fill="none" stroke="#ffb74d" stroke-width="18" stroke-linecap="round"/>
+  <path d="M405 490c65-47 145-45 205 8 63 55 142 53 198 4" fill="none" stroke="#ffcc80" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="520" cy="455" r="18" fill="#ef5350"/>
+  <circle cx="670" cy="445" r="20" fill="#e53935"/>
+  <circle cx="740" cy="490" r="16" fill="#d32f2f"/>
+  <ellipse cx="610" cy="420" rx="18" ry="10" fill="#43a047"/>
+  <ellipse cx="560" cy="485" rx="16" ry="9" fill="#2e7d32"/>
+  <ellipse cx="700" cy="465" rx="17" ry="9" fill="#388e3c"/>
+</svg>
