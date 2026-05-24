@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal de gastronomia con recetas de temporada, fichas de detalle y fuentes de referencia.">
+  <title>Portada | Gastronomia en Casa</title>
+  <link rel="stylesheet" href="./styles/main.scss">
+  <script type="module" src="./js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar navegacion principal</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <p class="logo">Gastronomia en Casa</p>
+      <nav class="main-nav" aria-label="Navegacion principal">
+        <ul>
+          <li><a href="./index.html" aria-current="page">Portada</a></li>
+          <li><a href="./categoria/index.html">Categoria</a></li>
+          <li><a href="./det1/index.html">Detalle 1</a></li>
+          <li><a href="./det2/index.html">Detalle 2</a></li>
+          <li><a href="./links/index.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="page">
+    <section class="hero" data-aos="fade-up">
+      <h1>Portal de gastronomia: sabores de temporada</h1>
+      <p>Proyecto web responsive orientado a cocina local y cultura culinaria. Desde esta portada puedes navegar al listado de categoria, visitar dos paginas de detalle y consultar todas las fuentes y atribuciones.</p>
+    </section>
+
+    <section class="grid" aria-label="Secciones principales">
+      <article class="card" data-aos="fade-up">
+        <img src="./imagenes/dg.jpg" alt="Plato principal de cocina mediterranea" width="800" height="1200" loading="eager" fetchpriority="high" decoding="async">
+        <div class="card-content">
+          <h2>Categoria</h2>
+          <p>Listado de recetas y espacios gastronomicos con filtro interactivo por tipo de contenido.</p>
+          <a class="cta" href="./categoria/index.html">Ir a categoria</a>
+        </div>
+      </article>
+
+      <article class="card" data-aos="fade-up" data-aos-delay="70">
+        <img src="./imagenes/ntpq.jpg" alt="Detalle visual de elaboracion culinaria" width="800" height="400" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h2>Detalle 1 y Detalle 2</h2>
+          <p>Dos fichas completas con imagen destacada, tres parrafos, galeria de tres imagenes y video incrustado.</p>
+          <a class="cta" href="./det1/index.html">Abrir detalle 1</a>
+        </div>
+      </article>
+
+      <article class="card" data-aos="fade-up" data-aos-delay="140">
+        <img src="./imagenes/Netflix.jpg" alt="Mesa con producto de mercado" width="2000" height="1125" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h2>Fuentes y creditos</h2>
+          <p>Pagina de enlaces con referencias, atribuciones y notas de autoria del contenido publicado.</p>
+          <a class="cta" href="./links/index.html">Ver enlaces</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Entrega academica de web responsive sobre gastronomia.</p>
+    <p>Construida con Parcel, Sass y JavaScript.</p>
+  </footer>
+</body>
+</html>

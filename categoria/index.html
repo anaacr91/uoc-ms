@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina de categoria con filtro de recetas y lugares gastronomicos.">
   <title>Categoria | Gastronomia en Casa</title>
   <link rel="stylesheet" href="../styles/main.scss">
-  <script type="module" src="../js/app.js"></script>
+  <script type="module" src="../js/app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar navegacion principal</a>
@@ -42,7 +43,7 @@
 
     <section aria-label="Listado de elementos" class="grid">
       <article class="card" data-category-card data-type="receta" data-aos="fade-up">
-        <img src="../imagenes/dg.jpg" alt="Plato de arroz meloso con verduras">
+        <img src="../imagenes/dg.jpg" alt="Plato de arroz meloso con verduras" width="800" height="1200" loading="eager" fetchpriority="high" decoding="async">
         <div class="card-content">
           <h3>Arroz meloso de temporada</h3>
           <p>Receta de cuchara para dias frios, con caldo casero y verduras de proximidad.</p>
@@ -51,7 +52,7 @@
       </article>
 
       <article class="card" data-category-card data-type="receta" data-aos="fade-up" data-aos-delay="80">
-        <img src="../imagenes/ntpq.jpg" alt="Tarta rustica con fruta horneada">
+        <img src="../imagenes/ntpq.jpg" alt="Tarta rustica con fruta horneada" width="800" height="400" loading="lazy" decoding="async">
         <div class="card-content">
           <h3>Tarta rustica de frutas</h3>
           <p>Base crujiente, fruta de temporada y acabado suave con miel local.</p>
@@ -60,7 +61,7 @@
       </article>
 
       <article class="card" data-category-card data-type="lugar" data-aos="fade-up" data-aos-delay="140">
-        <img src="../imagenes/Netflix.jpg" alt="Mercado gastronomico con puestos variados">
+        <img src="../imagenes/Netflix.jpg" alt="Mercado gastronomico con puestos variados" width="2000" height="1125" loading="lazy" decoding="async">
         <div class="card-content">
           <h3>Mercado gastronomico central</h3>
           <p>Parada recomendada para comprar producto fresco y descubrir productores locales.</p>

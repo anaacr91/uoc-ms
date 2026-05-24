@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detalle de receta de arroz meloso con galeria de proceso y video de referencia.">
   <title>Det1 | Arroz meloso de temporada</title>
+  <link rel="preconnect" href="https://www.youtube.com">
+  <link rel="preconnect" href="https://www.youtube-nocookie.com">
   <link rel="stylesheet" href="../styles/main.scss">
-  <script type="module" src="../js/app.js"></script>
+  <script type="module" src="../js/app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar navegacion principal</a>
@@ -33,7 +36,7 @@
       </header>
 
       <figure class="detail-media" data-aos="fade-up">
-        <img src="../imagenes/dg.jpg" alt="Arroz meloso en cazuela de barro listo para servir">
+        <img src="../imagenes/dg.jpg" alt="Arroz meloso en cazuela de barro listo para servir" width="800" height="1200" loading="eager" fetchpriority="high" decoding="async">
         <figcaption>Imagen destacada del plato principal.</figcaption>
       </figure>
 
@@ -42,15 +45,15 @@
       <p>Al emplatar, se finaliza con aceite de oliva virgen extra y perejil fresco picado. Esta terminacion da brillo, aroma y equilibrio al conjunto, transformando un plato humilde en una receta de autor accesible.</p>
 
       <section class="gallery" aria-label="Galeria del proceso" data-aos="fade-up">
-        <img src="../imagenes/dg.jpg" alt="Sofrito inicial con cebolla y pimiento">
-        <img src="../imagenes/ntpq.jpg" alt="Incorporacion del caldo durante la coccion">
-        <img src="../imagenes/Netflix.jpg" alt="Resultado final servido en plato hondo">
+        <img src="../imagenes/dg.jpg" alt="Sofrito inicial con cebolla y pimiento" width="800" height="1200" loading="lazy" decoding="async">
+        <img src="../imagenes/ntpq.jpg" alt="Incorporacion del caldo durante la coccion" width="800" height="400" loading="lazy" decoding="async">
+        <img src="../imagenes/Netflix.jpg" alt="Resultado final servido en plato hondo" width="2000" height="1125" loading="lazy" decoding="async">
       </section>
 
       <section aria-labelledby="video-receta" data-aos="fade-up">
         <h2 id="video-receta">Video de referencia</h2>
         <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/8E4cQHejFq0" title="Video de receta de arroz meloso" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/8E4cQHejFq0" title="Video de receta de arroz meloso" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </section>
     </article>
