@@ -1,0 +1,62 @@
+[
+  {
+    "nombre": "banderaes.png",
+    "formatoAntiguo": "png",
+    "formatoNuevo": "webp",
+    "pesoAntiguoKB": 250.08,
+    "pesoNuevoKB": 3.07,
+    "mejoraPorcentaje": 98.77,
+    "archivoAntiguo": "imagenes\\banderaes.png",
+    "archivoNuevo": "imagenes\\optimized\\banderaes-opt.webp"
+  },
+  {
+    "nombre": "ntpq.jpg",
+    "formatoAntiguo": "jpg",
+    "formatoNuevo": "webp",
+    "pesoAntiguoKB": 64.75,
+    "pesoNuevoKB": 27.36,
+    "mejoraPorcentaje": 57.75,
+    "archivoAntiguo": "imagenes\\ntpq.jpg",
+    "archivoNuevo": "imagenes\\optimized\\ntpq-opt.webp"
+  },
+  {
+    "nombre": "dg.jpg",
+    "formatoAntiguo": "jpg",
+    "formatoNuevo": "webp",
+    "pesoAntiguoKB": 132.18,
+    "pesoNuevoKB": 90.73,
+    "mejoraPorcentaje": 31.36,
+    "archivoAntiguo": "imagenes\\dg.jpg",
+    "archivoNuevo": "imagenes\\optimized\\dg-opt.webp"
+  },
+  {
+    "nombre": "s.jpg",
+    "formatoAntiguo": "jpg",
+    "formatoNuevo": "webp",
+    "pesoAntiguoKB": 29.81,
+    "pesoNuevoKB": 21.01,
+    "mejoraPorcentaje": 29.53,
+    "archivoAntiguo": "imagenes\\s.jpg",
+    "archivoNuevo": "imagenes\\optimized\\s-opt.webp"
+  },
+  {
+    "nombre": "Netflix.jpg",
+    "formatoAntiguo": "jpg",
+    "formatoNuevo": "webp",
+    "pesoAntiguoKB": 299.97,
+    "pesoNuevoKB": 253.51,
+    "mejoraPorcentaje": 15.49,
+    "archivoAntiguo": "imagenes\\Netflix.jpg",
+    "archivoNuevo": "imagenes\\optimized\\Netflix-opt.webp"
+  },
+  {
+    "nombre": "Banderain.png",
+    "formatoAntiguo": "png",
+    "formatoNuevo": "png",
+    "pesoAntiguoKB": 10.38,
+    "pesoNuevoKB": 9.78,
+    "mejoraPorcentaje": 5.76,
+    "archivoAntiguo": "imagenes\\Banderain.png",
+    "archivoNuevo": "imagenes\\optimized\\Banderain-opt.png"
+  }
+]

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function initFilters() {
   const filterButtons = document.querySelectorAll("[data-filter]");
   const cards = document.querySelectorAll("[data-category-card]");
@@ -66,3 +67,39 @@ if (document.readyState === "loading") {
 } else {
   initPage();
 }
+=======
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 700,
+  once: true,
+  offset: 80,
+});
+
+const filterButtons = document.querySelectorAll("[data-filter]");
+const cards = document.querySelectorAll("[data-category-card]");
+
+for (const button of filterButtons) {
+  button.setAttribute("aria-pressed", button.classList.contains("is-active") ? "true" : "false");
+}
+
+for (const button of filterButtons) {
+  button.addEventListener("click", () => {
+    const filterValue = button.dataset.filter;
+
+    for (const item of filterButtons) {
+      item.classList.remove("is-active");
+      item.setAttribute("aria-pressed", "false");
+    }
+    button.classList.add("is-active");
+    button.setAttribute("aria-pressed", "true");
+
+    for (const card of cards) {
+      const cardType = card.dataset.type;
+      const isMatch = filterValue === "todos" || cardType === filterValue;
+      card.hidden = !isMatch;
+    }
+  });
+}
+>>>>>>> ee991172c65a9813c2d085375480b86dedb54141
