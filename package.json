@@ -5,12 +5,8 @@
   "description": "Portal de gastronomia con Parcel",
   "scripts": {
     "dev": "parcel serve index.html categoria/index.html det1/index.html det2/index.html links/index.html",
-<<<<<<< HEAD
-    "build": "parcel build index.html categoria/index.html det1/index.html det2/index.html links/index.html --dist-dir dist --public-url ./"
-=======
     "build": "parcel build index.html categoria/index.html det1/index.html det2/index.html links/index.html --dist-dir dist --public-url ./",
     "optimize:images": "node scripts/optimize-images.mjs"
->>>>>>> ee991172c65a9813c2d085375480b86dedb54141
   },
   "browserslist": [
     "> 0.5%",
@@ -26,11 +22,7 @@
     "sass": "^1.89.0"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "aos": "^2.3.4"
-=======
     "aos": "^2.3.4",
     "sharp": "^0.34.2"
->>>>>>> ee991172c65a9813c2d085375480b86dedb54141
   }
 }
