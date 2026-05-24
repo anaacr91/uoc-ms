@@ -50,11 +50,26 @@ async function loadAOS() {
     return;
   }
 
+  const showAosFallback = () => {
+    const aosElements = document.querySelectorAll("[data-aos]");
+    for (const element of aosElements) {
+      element.style.opacity = "1";
+      element.style.transform = "none";
+    }
+  };
+
   try {
-    const [{ default: AOS }] = await Promise.all([
+    const [aosModule] = await Promise.all([
       import("aos"),
       import("aos/dist/aos.css"),
     ]);
+
+    const AOS = aosModule.default || aosModule;
+
+    if (!AOS || typeof AOS.init !== "function") {
+      showAosFallback();
+      return;
+    }
 
     AOS.init({
       duration: 700,
@@ -63,6 +78,7 @@ async function loadAOS() {
       disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     });
   } catch (error) {
+    showAosFallback();
     // Keep page functional even if the animation dependency fails to load.
     console.warn("No se pudo cargar AOS", error);
   }
